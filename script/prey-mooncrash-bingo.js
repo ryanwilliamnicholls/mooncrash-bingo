@@ -192,7 +192,7 @@ bingoList[17] = [
   { name: "Find Janelle Parsons", types: ["Find"] },
   { name: "Find Alessandra Vega", types: ["Find"] },
   { name: "Find Oscar Pendelton", types: ["Find"] },
-  { name: "Unlock all Human abilities for Riley", types: ["Neuromod", "Riley"] }
+  { name: "Unlock all Human abilities for Riley", types: ["Neuromod", "Riley"] },
   { name: "Scan a Technopath", types: ["Technopath"] }
 ];
 bingoList[18] = [
