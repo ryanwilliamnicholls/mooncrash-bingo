@@ -126,7 +126,7 @@ bingoList[10] = [
   { name: "Find Chao Wei", types: ["Find"] },
   { name: "Find Dianna Riendeau", types: ["Find"] },
   { name: "Find Marjorie Smythe", types: ["Find"] },
-  { name: "Find Max Cotman", types: ["Find"] }
+  { name: "Find Max Cotman", types: ["Find"] },
   { name: "Die to a Telepath", types: ["Telepath"] },
   { name: "Scan a Moonshark", types: ["Moonshark"] }
 ];
@@ -183,7 +183,7 @@ bingoList[16] = [
   { name: "Find Margret McCandles", types: ["Find"] },
   { name: "Find Mary Quail", types: ["Find"] },
   { name: "Unlock all Human abilities for Andrius", types: ["Neuromod", "Andrius"] },
-  { name: "Die to a Technopath", types: ["Technopath"] }
+  { name: "Die to a Technopath", types: ["Technopath"] },
   { name: "Complete 8 KASMA Orders", types: ["Orders"] }
 ];
 bingoList[17] = [
@@ -206,7 +206,7 @@ bingoList[18] = [
 bingoList[19] = [
   { name: "Consciousness Emulations Escape", types: ["Escape"] },
   { name: "Mimic Portal Escape", types: ["Escape"] },
-  { name: "Complete Vijay’s Story mission", types: ["Story", "Vijay", "Claire"] },
+  { name: "Complete VijayÂ’s Story mission", types: ["Story", "Vijay", "Claire"] },
   { name: "Unlock Claire Whitten", types: ["Story", "Unlock", "Vijay", "Claire"] },
   { name: "Scan 5 unique Typhon with the Psychoscope", types: [] },
   { name: "Kill a Poltergeist", types: ["Poltergeist"] }
@@ -216,7 +216,7 @@ bingoList[20] = [
   { name: "Kill a Moonshark", types: ["Moonshark"] },
   { name: "Unlock all Characters", types: ["Unlock"] },
   { name: "Find 10 unique Fabrication plans", types: [] },
-  { name: "Complete Joan’s Story mission", types: ["Story", "Joan"] },
+  { name: "Complete JoanÂ’s Story mission", types: ["Story", "Joan"] },
   { name: "Find 10 unique Chipsets", types: [] },
   { name: "Kill a normal Harvester", types: ["Harvester"] },
   { name: "Complete 10 KASMA Orders", types: ["Orders"] }
@@ -231,11 +231,11 @@ bingoList[21] = [
   { name: "Kill a Technopath", types: ["Technopath"] }
 ];
 bingoList[22] = [
-  { name: "Complete Riley’s Story mission", types: ["Story", "Riley" ]},
+  { name: "Complete RileyÂ’s Story mission", types: ["Story", "Riley" ]},
   { name: "Unlock all Human abilities for Claire", types: ["Neuromod", "Claire"] },
   { name: "Remove power from all trams and areas at the same time", types: [] },
   { name: "Read all of the second starbender series", types: [] },
-  { name: "Complete Claire’s Story Mission", types: ["Story", "Claire"] },
+  { name: "Complete ClaireÂ’s Story Mission", types: ["Story", "Claire"] },
   { name: "Scan a Poltergeist", types: ["Poltergeist"] },
   { name: "Complete 12 KASMA Orders", types: ["Orders"] }
 ];
