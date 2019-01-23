@@ -103,7 +103,7 @@ srl.bingo = function (bingoList, size) {
     } while ((synergy != 0) && (j<bingoList[getDifficulty].length));
     // pick a random one of the list of the best matches and use that 
     // to avoid the same node being picked over and over	
-    RNG = Math.floor(minSynNodeArray.length - 1 * Math.random());
+    RNG = Math.floor(minSynNodeArray.length * Math.random());
     bingoBoard[i].types = minSynNodeArray[RNG].value.types;
     bingoBoard[i].name = minSynNodeArray[RNG].value[LANG] || minSynNodeArray[RNG].value.name;
     bingoBoard[i].synergy = minSynNodeArray[RNG].synergy;
