@@ -91,20 +91,22 @@ srl.bingo = function (bingoList, size) {
     var getDifficulty = bingoBoard[i].difficulty; // difficulty of current square
     var RNG = Math.floor(bingoList[getDifficulty].length * Math.random());
     if (RNG == bingoList[getDifficulty].length) { RNG--; }; //fix a miracle
-    var j = 0, synergy = 0, currentObj = null, minSynObj = null;
+    var j = 0, synergy = 0, currentObj = null, minSynNodeArray = new Array();
     
     do {
       currentObj = bingoList[getDifficulty][(j+RNG)%bingoList[getDifficulty].length];
-      synergy = checkLine(i, currentObj.types);
-      if (minSynObj == null || synergy < minSynObj.synergy) {
-        minSynObj = { synergy: synergy, value: currentObj };
+      synergy = checkLine(i, currentObj);
+      if (minSynNodeArray[0] == null || synergy < minSynNodeArray[0].synergy) {
+        minSynNodeArray.push({synergy: synergy, value: currentObj });
       }
       j++;
     } while ((synergy != 0) && (j<bingoList[getDifficulty].length));
-    
-    bingoBoard[i].types = minSynObj.value.types;
-    bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
-    bingoBoard[i].synergy = minSynObj.synergy;
+    // pick a random one of the list of the best matches and use that 
+    // to avoid the same node being picked over and over	
+    RNG = Math.floor(minSynNodeArray.length - 1 * Math.random());
+    bingoBoard[i].types = minSynNodeArray[RNG].value.types;
+    bingoBoard[i].name = minSynNodeArray[RNG].value[LANG] || minSynNodeArray[RNG].value.name;
+    bingoBoard[i].synergy = minSynNodeArray[RNG].synergy;
   }
   
   //populate the actual table on the page
@@ -114,11 +116,17 @@ srl.bingo = function (bingoList, size) {
     //$('#slot'+i).append("<br/>" + bingoBoard[i].synergy);
   }
   
-  function checkLine (i, typesA) {
+  function checkLine (i, currrentObjective) {
+  	var typesA = currrentObjective.types
     var synergy = 0;
     
     for (var j=0; j<lineCheckList[i].length; j++) {
+      var nameB = bingoBoard[lineCheckList[i][j]+1].name;
       var typesB = bingoBoard[lineCheckList[i][j]+1].types;
+      if(nameB == currrentObjective.name) {
+      	synergy += 10; // make duplicates really bad
+      }
+      
       if (typeof typesB != 'undefined') {
       
         for (var k=0; k < typesA.length; k++) {
@@ -136,34 +144,6 @@ srl.bingo = function (bingoList, size) {
     
     return synergy;
   }
-  
-  //OLD SHIT
-  /*
-  for (var i=1;i<=25;i++) {
-    var x = false;
-    var getDifficulty, thisRand, thisName, thisType, comboBreaker;
-    getDifficulty = $('#slot'+i).attr('data-difficulty'); // difficulty of current square
-    while (x == false) {
-      thisRand = Math.floor(bingoList[getDifficulty].length * Math.random()); // random item #
-      thisName = bingoList[getDifficulty][thisRand].name; // name of item
-      thisType = bingoList[getDifficulty][thisRand].type; // type of item
-      thisType2 = bingoList[getDifficulty][thisRand].type2; // type of item
-      x = checkLine(i, thisType, thisType2);
-      comboBreaker++;
-      if (comboBreaker > 15) {x = true;}
-    }
-    comboBreaker = 0;
-    $('#slot'+i).append(thisName); // add the name to the square
-    $('#slot'+i).attr('data-type', thisType); // put the type in the attr
-    if (thisType2 != "") { $('#slot'+i).attr('data-type2', thisType2); } // sometimes put type2
-    bingoList[getDifficulty].splice(thisRand,1);
-    //results.append("<br/>Removed: " + getDifficulty + " " + thisRand);
-    //results.append("<br/>randomized: " + thisRand + " " + thisName + " " + thisType);
-  }
-  */
-  
-  
-
   
   function gup( name ) {
     name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
