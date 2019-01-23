@@ -1,16 +1,16 @@
 var bingoList = [];
 bingoList[1] = [
 	{ name: "Unlock Riley Yu", types: ["Unlock", "Riley"] },
-	{ name: "Unlock Joan Winslow", types: ["Unlock", "Joan"] },
 	{ name: "Kill a normal Mimic", types: ["Mimic"] },
 	{ name: "Discover all Four Pytheas Moonbase Areas", types: [] },
 	{ name: "Get Drunk", types: ["status"] },
+	{ name: "Unlock Joan Winslow", types: ["Unlock", "Joan"] },
 	{ name: "Break your legs", types: ["status"] },
-	{ name: "Get the well fed condition", types: ["status"] },
-	{ name: "Get the fatigue condition", types: ["status"] },
 	{ name: "Score a basket in Crew Annex", types: [] },
+	{ name: "Get the well fed condition", types: ["status"] },
 	{ name: "Install a Neuromod", types: ["Neuromod"] },
 	{ name: "Install Metabolic Boost for Andrius", types: ["Andrius", "HumanAbility"] },  
+	{ name: "Get the fatigue condition", types: ["status"] },
 	{ name: "Escape Pod Escape", types: ["Escape", "EscapePod"] },
 	{ name: "Acquire a Medkit", types: [] }
 ];
@@ -37,14 +37,14 @@ bingoList[3] = [
 	{ name: "Die to a Tentacle Nest", types: ["TentacleNest"] },
 	{ name: "Acquire a Psychostatic Cutter", types: [] },
 	{ name: "Get the hemorrhaging condition", types: ["status"] },
+	{ name: "Install Neurostimulant 2 for Andrius", types: ["Andrius", "HumanAbility"] },
 	{ name: "Have 3 Status Conditions at once", types: ["multistatus"] },
 	{ name: "Acquire a Typhon Lure", types: [] },
+	{ name: "Install Necropsy for Riley", types: ["Riley", "HumanAbility"] },
 	{ name: "Kill a corrupted Operator", types: ["Operator"] },
+	{ name: "Install Reverse Engineer for Joan", types: ["Joan", "HumanAbility"] },  
 	{ name: "Scan a normal Mimic", types: ["Mimic"] },
 	{ name: "Die to a normal Phantom", types: ["Phantom"] },
-	{ name: "Install Neurostimulant 2 for Andrius", types: ["Andrius", "HumanAbility"] },
-	{ name: "Install Necropsy for Riley", types: ["Riley", "HumanAbility"] },
-	{ name: "Install Reverse Engineer for Joan", types: ["Joan", "HumanAbility"] },  
 	{ name: "Install Combat Medic 2 for Vijay", types: ["Vijay", "HumanAbility"] }, 
 	{ name: "Find Etienne David", types: [] },
 	{ name: "Find Grey Blessing", types: [] },
@@ -80,8 +80,8 @@ bingoList[5] = [
 	{ name: "Acquire a Gluu Gun", types: [] },
 	{ name: "Acquire a Huntress Boltcaster", types: [] },
 	{ name: "Acquire a Q-Beam", types: [] },
-	{ name: "Scan 5 unique Typhon with the Psychoscope", types: [] },
 	{ name: "Install Neurostimulant 2 for Riley", types: ["Riley", "HumanAbility"] },
+	{ name: "Scan 5 unique Typhon with the Psychoscope", types: [] },
 	{ name: "Install Materials Expert for Joan", types: ["Joan", "HumanAbility"] },
 	{ name: "Find Robert \"Scooter\" Tate", types: [] },
 	{ name: "Find Rose Waterfield", types: [] },
@@ -95,8 +95,8 @@ bingoList[5] = [
 ];
 bingoList[6] = [
 	{ name: "Kill a Thermal Mimic", types: ["Mimic"] },
-	{ name: "Kill a Voltaic Mimic", types: ["Mimic"] },
 	{ name: "Kill a normal Harvester", types: ["Harvester"] },
+	{ name: "Kill a Voltaic Mimic", types: ["Mimic"] },
 	{ name: "Kill a Tentacle Nest", types: ["TentacleNest"] },
 	{ name: "Die to a Weaver", types: ["Weaver"] },   
 	{ name: "Find Alistair Tramontin", types: [] },
@@ -106,10 +106,10 @@ bingoList[6] = [
 ];
 bingoList[7] = [
 	{ name: "Die to a Voltaic Mimic", types: ["Mimic"] },
-	{ name: "Die to a Thermal Mimic", types: ["Mimic"] },
 	{ name: "Kill a Thermal Phantom", types: ["Phantom"] },
-	{ name: "Kill a Voltaic Phantom", types: ["Phantom"] },
+	{ name: "Die to a Thermal Mimic", types: ["Mimic"] },
 	{ name: "Kill a Weaver", types: ["Weaver"] },
+	{ name: "Kill a Voltaic Phantom", types: ["Phantom"] },
 	{ name: "Scan a normal Harvester", types: ["Harvester"] },
 	{ name: "Kill an Etheric Mimic", types: ["Mimic"] },
 	{ name: "Unlock Vijay Bhatia", types: ["Unlock", "Vijay"] },
@@ -124,16 +124,16 @@ bingoList[7] = [
 ];
 bingoList[8] = [
 	{ name: "Die to an Etheric Mimic", types: ["Mimic"] },
-	{ name: "Scan a Thermal Mimic", types: ["Mimic"] },
-	{ name: "Scan a Voltaic Mimic", types: ["Mimic"] },
 	{ name: "Scan a Weaver", types: ["Weaver"] },
+	{ name: "Scan a Thermal Mimic", types: ["Mimic"] },
 	{ name: "Scan a Nightmare", types: ["Nightmare"] },
+	{ name: "Scan a Voltaic Mimic", types: ["Mimic"] },
 	{ name: "Shuttle Escape", types: ["Escape", "HumanAbility"] },
-	{ name: "Acquire a Typhon Spore", types: [] },
 	{ name: "Die to a Voltaic Phantom", types: ["Phantom"] },
+	{ name: "Acquire a Typhon Spore", types: [] },
 	{ name: "Die to a Thermal Phantom", types: ["Phantom"] },
-	{ name: "Kill an Etheric Phantom", types: ["Phantom"] },
 	{ name: "Install Psionic Aptitude 3 for Andrius", types: ["Andrius", "HumanAbility"] },
+	{ name: "Kill an Etheric Phantom", types: ["Phantom"] },
 	{ name: "Install Psionic Aptitude 3 for Riley", types: ["Riley", "HumanAbility"] },
 	{ name: "Find Alejandro Marin", types: [] },	   
 	{ name: "Find Lea Tevet", types: [] },
@@ -146,14 +146,14 @@ bingoList[8] = [
 	{ name: "Find Vasco Marrone", types: [] }
 ];
 bingoList[9] = [
-{ name: "Scan an Etheric Mimic", types: ["Mimic"] },
+	{ name: "Scan an Etheric Mimic", types: ["Mimic"] },
 	{ name: "Scan a Moonshark", types: ["Moonshark"] },
 	{ name: "Die to a Telepath", types: ["Telepath"] },
+	{ name: "Die to an Etheric Phantom", types: ["Phantom"] },
 	{ name: "Mass Driver Escape", types: ["Escape"] },
 	{ name: "Scan a Thermal Phantom", types: ["Phantom"] },
-	{ name: "Scan a Voltaic Phantom", types: ["Phantom"] },
-	{ name: "Die to an Etheric Phantom", types: ["Phantom"] },
 	{ name: "Install Phantom Genesis 2 for Riley", types: ["Riley", "TyphonAbility"] },
+	{ name: "Scan a Voltaic Phantom", types: ["Phantom"] },
 	{ name: "Find Angela Wagner", types: [] },
 	{ name: "Find Joe Blank", types: [] },
 	{ name: "Find Patrice Young", types: [] },
@@ -184,14 +184,14 @@ bingoList[10] = [
 bingoList[11] = [
 	{ name: "Scan a Telepath", types: ["Telepath"] },
 	{ name: "Get radiation poisoning", types: ["status"] },
+	{ name: "Install Mobility 2 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Get the fear condition", types: ["status"] },
 	{ name: "Consciousness Emulations Escape", types: ["Escape", "TyphonAbility"] },
 	{ name: "Kill a Poltergeist", types: ["Poltergeist"] },
+	{ name: "Install Stamina 2 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Find 10 unique Fabrication plans", types: [] },
 	{ name: "Die to a corrupted Harvester", types: ["Harvester"] },
-	{ name: "Install Stamina 2 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Install Firearms 2 for Vijay", types: ["Vijay", "HumanAbility"] },
-	{ name: "Install Mobility 2 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Find Harry Conway", types: [] },
 	{ name: "Find Jacques Paradis", types: [] },
 	{ name: "Find Jordan Walton", types: [] },
@@ -222,11 +222,11 @@ bingoList[12] = [
 ];
 bingoList[13] = [
 	{ name: "Acquire an Standard Weapon", types: [] },
+	{ name: "Install Leverage 3 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Acquire an Elite Weapon", types: [] },
+	{ name: "Install Suit Modification 3 for Joan", types: ["Joan", "HumanAbility"] },
 	{ name: "Complete 7 KASMA Orders", types: ["Orders"] },
 	{ name: "Acquire an Elite Chipset", types: [] },
-	{ name: "Install Leverage 3 for Vijay", types: ["Vijay", "HumanAbility"] },
-	{ name: "Install Suit Modification 3 for Joan", types: ["Joan", "HumanAbility"] },
 	{ name: "Install Repair 3 for Joan", types: ["Joan", "HumanAbility"] },
 	{ name: "Find Mickey Peppers", types: [] },
 	{ name: "Find Nathan Leong", types: [] },
@@ -244,9 +244,9 @@ bingoList[14] = [
 	{ name: "Have 5 Status Conditions at once", types: ["multistatus"] },
 	{ name: "Complete Joan’s Story mission", types: ["Story", "Joan"] },
 	{ name: "Die to a Poltergeist", types: ["Poltergeist"] },
+	{ name: "Unlock Claire Whitten", types: ["Story", "Unlock", "Vijay", "Claire"] },
 	{ name: "Die to a Technopath", types: ["Technopath"] },
 	{ name: "Complete Vijay’s Story mission", types: ["Story", "Vijay", "Claire"] },
-	{ name: "Unlock Claire Whitten", types: ["Story", "Unlock", "Vijay", "Claire"] },
 	{ name: "Find Robbie Murphy", types: [] },
 	{ name: "Find Rick Dawson", types: [] },
 	{ name: "Get into Rileys office in Crew Annex", types: [] }
@@ -259,18 +259,17 @@ bingoList[15] = [
 	{ name: "Scan a Poltergeist", types: ["Poltergeist"] },
 	{ name: "Unlock all Human abilities for Andrius", types: ["Neuromod", "Andrius"] },
 	{ name: "Get into Psychotronic Weapons Research in Pytheas Labs", types: [] },
-{ name: "Find Demarcus Cloud", types: [] },
+	{ name: "Find Demarcus Cloud", types: [] },
 	{ name: "Find Brian Gately", types: [] },
 	{ name: "Find Elnaz Pashaei", types: [] }
-
 ];
 bingoList[16] = [
 	{ name: "Complete Riley’s Story mission", types: ["Story", "Riley" ]},
 	{ name: "Install Pulverize for Joan", types: ["Joan", "HumanAbility"] },
-	{ name: "Install Combat Focus 3 for Vijay", types: ["Vijay", "HumanAbility"] },
-	{ name: "Install Stealth 3 for Riley", types: ["Riley", "HumanAbility"] },
 	{ name: "Complete a KASMA Bounty", types: [] },
+	{ name: "Install Combat Focus 3 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Kill a Technopath", types: ["Technopath"] },
+	{ name: "Install Stealth 3 for Riley", types: ["Riley", "HumanAbility"] },
 	{ name: "Die to a Nightmare", types: ["Nightmare"] },
 	{ name: "Find Oscar Pendelton", types: [] },
 	{ name: "Find Florence Billings", types: [] },
@@ -282,80 +281,81 @@ bingoList[16] = [
 bingoList[17] = [
 	{ name: "Unlock all Human abilities for Riley", types: ["Neuromod", "Riley"] },
 	{ name: "Install Psychotronics 3 for Riley", types: ["Riley", "HumanAbility"] },
-	{ name: "Install Summon Turret Companion 3 for Joan", types: ["Joan", "HumanAbility"] },
-	{ name: "Install Toughness 3 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Read all of the second starbender series", types: [] },
+	{ name: "Install Summon Turret Companion 3 for Joan", types: ["Joan", "HumanAbility"] },
 	{ name: "Acquire the ARTX PROPULSION GEN 1 chipset", types: [] },
+	{ name: "Install Toughness 3 for Vijay", types: ["Vijay", "HumanAbility"] },
 	{ name: "Kill a Nightmare", types: ["Nightmare"] }
 ];
 bingoList[18] = [
-	{ name: "Mimic Portal Escape", types: ["Escape", "HumanAbility"] },
-	{ name: "Complete 9 KASMA Orders", types: ["Orders"] },
 	{ name: "Install Phantom Shift 2", types: ["Claire", "TyphonAbility"] },
+	{ name: "Mimic Portal Escape", types: ["Escape", "HumanAbility"] },
 	{ name: "Install Fear Resistance for Riley", types: ["Riley", "TyphonAbility"] },
+	{ name: "Complete 9 KASMA Orders", types: ["Orders"] },
 	{ name: "Install Regeneration 2 for Andrius", types: ["Andrius", "TyphonAbility"] },
 	{ name: "Never Die", types: [] }
 ];
 bingoList[19] = [
-	{ name: "Complete 10 KASMA Orders", types: ["Orders"] },
 	{ name: "Install Lift Field 2 for Andrius", types: ["Andrius", "TyphonAbility"] },
+	{ name: "Complete 10 KASMA Orders", types: ["Orders"] },
 	{ name: "Install Machine Mind 3 for Joan", types: ["Joan", "TyphonAbility"] },
+	{ name: "Never use Weapons (Abilities only)", types: [] },
 	{ name: "Install Kinetic Blast 3 for Andrius", types: ["Andrius", "TyphonAbility"] },
 	{ name: "Unlock all Human abilities for Vijay", types: ["Neuromod", "Vijay"] },
 	{ name: "Never Install a Typhon Ability", types: ["Neuromod", "TyphonAbility"] }
 ];
 bingoList[20] = [
-	{ name: "Complete 11 KASMA Orders", types: ["Orders"] },
 	{ name: "Install Electrostatic Burst 3 for Joan", types: ["Joan", "TyphonAbility"] },
+	{ name: "Complete 11 KASMA Orders", types: ["Orders"] },
 	{ name: "Install Superthermal 3 for Andrius", types: ["Andrius", "TyphonAbility"] },
 	{ name: "Install Psychoshock 3 for Riley", types: ["Riley", "TyphonAbility"] },
 	{ name: "Unlock all Human abilities for any 2 characters", types: ["Neuromod"] },
 	{ name: "Never Install a Human Ability", types: ["Neuromod", "HumanAbility"] }
 ];
 bingoList[21] = [
-{ name: "Install Mindjack 3 for Riley", types: ["Riley", "TyphonAbility"] },
-	{ name: "Install Backlash 3 for Andrius", types: ["Andrius", "TyphonAbility"] },
-	{ name: "Install Burrow 2 for Andrius", types: ["Andrius", "TyphonAbility"] },    
+	{ name: "Install Mindjack 3 for Riley", types: ["Riley", "TyphonAbility"] },
 	{ name: "Never reset the simulation", types: [] },
+	{ name: "Install Backlash 3 for Andrius", types: ["Andrius", "TyphonAbility"] },
 	{ name: "Remove power from all trams and areas at the same time", types: [] },
+	{ name: "Install Burrow 2 for Andrius", types: ["Andrius", "TyphonAbility"] },    
 	{ name: "Never go above Corruption Level 1", types: ["Corruption"] }
 ];
 bingoList[22] = [
 	{ name: "Never buy items with simulation points", types: [] },
 	{ name: "Complete Andrius Story Mission", types: ["Story", "Andrius"] },
 	{ name: "Complete 12 KASMA Orders", types: ["Orders"] },
-	{ name: "Get to Corruption 3 or higher", types: ["Corruption"] },
 	{ name: "Install Mimic Matter 3 for Riley", types: ["Riley", "TyphonAbility"] },  
 	{ name: "Install Mobility 2 on Claire", types: ["Claire", "HumanAbility"] },
+	{ name: "Get to Corruption 3 or higher", types: ["Corruption"] },
 	{ name: "Install Sneak Attack 2 on Claire", types: ["Claire", "HumanAbility"] },
 ];
 bingoList[23] = [
 	{ name: "Complete Claire’s Story Mission", types: ["Story", "Claire"] },
 	{ name: "Unlock all Typhon abilities for Joan", types: ["Neuromod", "Joan"] },
+	{ name: "Install Psychic Edge 3 on Claire", types: ["Claire", "HumanAbility"] },
 	{ name: "Kill all 5 characters in a single simulation.", types: [] },
+	{ name: "Install Stealth 3 on Claire", types: ["Claire", "HumanAbility"] },
 	{ name: "Find all Crater Crew members", types: [] },
 	{ name: "Get to Corruption 4 or higher", types: ["Corruption"] },
-	{ name: "Install Psychic Edge 3 on Claire", types: ["Claire", "HumanAbility"] },
-	{ name: "Install Stealth 3 on Claire", types: ["Claire", "HumanAbility"] },
 	{ name: "Install Hacking 4 on Claire", types: ["Claire", "HumanAbility"] }
 ];
 bingoList[24] = [
 	{ name: "Unlock all Typhon abilities for Riley", types: ["Neuromod", "Riley"] },
-	{ name: "Unlock all Human abilities for Claire", types: ["Neuromod", "Claire"] },
-	{ name: "Install 50 neuromods across all 5 crew members", types: ["Neuromod"] },
-	{ name: "Unlock all Typhon abilities for Andrius", types: ["Neuromod", "Andrius"] },
 	{ name: "Escape with 5 characters in a single simulation.", types: ["Escape"] },
+	{ name: "Unlock all Human abilities for Claire", types: ["Neuromod", "Claire"] },
 	{ name: "Get to Corruption 5", types: ["Corruption"] },
+	{ name: "Install 50 neuromods across all 5 crew members", types: ["Neuromod"] },
 	{ name: "Complete 15 KASMA Orders", types: ["Orders"] },
+	{ name: "Unlock all Typhon abilities for Andrius", types: ["Neuromod", "Andrius"] },
 	{ name: "Complete Claire's Story Mission", types: ["Story", "Claire"] },
 	{ name: "Install Remote Manipulation 3 on Claire", types: ["Claire", "TyphonAbility"] }
 ];
 bingoList[25] = [
-{ name: "Complete all Story Missions", types: ["Story"] },
+	{ name: "Complete all Story Missions", types: ["Story"] },
 	{ name: "Find all Crew annex Crew members", types: [] },
 	{ name: "Find all Moonworks Crew members", types: [] },
-	{ name: "Find all Pytheas labs Crew members", types: [] },
 	{ name: "Unlock all Human abilities for all characters.", types: ["Neuromod"] },
+	{ name: "Find all Pytheas labs Crew members", types: [] },
 	{ name: "Unlock all Typhon abilities for Claire", types: ["Neuromod", "Claire"] },
 	{ name: "Max out corruption (Corruption 6)", types: ["Corruption"] }
 ];
